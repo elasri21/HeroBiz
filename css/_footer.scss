@@ -1,0 +1,148 @@
+// footer
+footer {
+    .top-footer {
+        padding: 60px 0;
+        background-color: $top-f;
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            .contaact-us {
+                h3 {
+                    font-weight: 600;
+                    font-size: 25px;
+                    color: $white;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 15px;
+                    color: $white;
+                    strong {
+                        text-transform: capitalize;
+                    }
+                    &:nth-of-type(2) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .useful-links {
+                h3 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: $white;
+                    text-transform: capitalize;
+                    margin-bottom: 20px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 22px;
+                        height: 2px;
+                        background-color: $blue;
+                        position: absolute;
+                        left: 0;
+                        top: calc(100% + 5px);
+                    }
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    li {
+                        a {
+                            gap: 5px;
+                            i {
+                                color: $grey-t;
+                                transition: .3s;
+                            }
+                            span {
+                                font-size: 16px;
+                                font-weight: 400;
+                                text-transform: capitalize;
+                                color: $grey-t;
+                                transition: .3s;
+                            }
+                            &:hover {
+                                i, span {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                p {
+                    max-width: 300px;
+                    font-size: 16px;
+                    color: $white;
+                    margin-bottom: 15px;
+                }
+                form {
+                    position: relative;
+                    @media (min-width: 375px) {
+                        .email {
+                            margin-bottom: 0 !important;
+                        }
+                        .subscribe {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            border-radius: 0 4px 4px 0 !important;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+                    .email {
+                        display: block;
+                        width: 100%;
+                        padding: 15px 20px;
+                        background-color: $white;
+                        border-radius: 4px;
+                        margin-bottom: 15px;
+                    }
+                    .subscribe {
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .copy {
+        padding: 30px 0;
+        background-color: $dark-bg;
+        .container {
+            p {
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 16px;
+                color: $grey-t;
+                a {
+                    text-transform: lowercase;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $grey-t;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+        }
+    }
+    .go-up {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: $blue;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        i {
+            color: $white;
+        }
+        &:hover {
+            background-color: $s-blue;
+        }
+    }
+}

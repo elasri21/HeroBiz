@@ -1,0 +1,35 @@
+.button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    &.rad-4 {
+        border-radius: 4px;
+    }
+    &.bg-blue {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            background-color: $s-blue;
+        }
+    }
+    &.bg-s-blue {
+        background-color: $s-blue;
+        color: $white;
+        &:hover {
+            background-color: $blue;
+        }
+    }
+    &.bg-white {
+        background-color: $white;
+        color: $blue;
+        &:hover {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+}

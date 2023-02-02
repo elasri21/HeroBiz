@@ -1,0 +1,68 @@
+// colors
+$white: #fff;
+$blue: #0ea2bd;
+$s-blue: #1095AE;
+$default-c: #1a1f24;
+$title-c: #485664;
+$link-c: #ffffffb3;
+$grey-t: #8f9fae;
+$second-bg: #ECEEEF;
+$section-bg: #F8F8F9;
+$bullet-bg: #757D85;
+$border-c: #6D777F;
+$field-b: #CED4DA;
+$dark-bg: #43505C;
+$top-f: #485664;
+$icon-bg: #4E5A65;
+$copy-bg: #3A4753;
+$nav-bg: #4C5A67;
+$star-c: #FFC107;
+// family
+$primary-f: 'Source Sans Pro', sans-serif;
+$second-f: 'Poppins', sans-serif;
+
+//animation
+@keyframes up-down {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 30px;
+    }
+}
+
+@keyframes wave {
+    0% {
+        outline-offset: 0;
+        outline-color: transparent;
+    }
+    20% {
+        outline-offset: 2px;
+        outline-color: $blue;
+    }
+    40% {
+        outline-offset: 4px;
+        outline-color: $blue;
+    }
+    60% {
+        outline-offset: 6px;
+        outline-color: $blue;
+    }
+    80% {
+        outline-offset: 8px;
+        outline-color: $blue;
+    }
+    100% {
+        outline-offset: 10px;
+        outline-color: $blue;
+    }
+}
+@keyframes explore {
+    0%, 100% {
+        font-size: 16px;
+    }
+    50% {
+        font-size: 60px;
+    }
+}
+

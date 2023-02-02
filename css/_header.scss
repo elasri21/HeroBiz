@@ -1,0 +1,120 @@
+header {
+    background-color: $white;
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 76px;
+    z-index: 111;
+    .container {
+        justify-content: space-between;
+        gap: 20px;
+        .logo {
+            a {
+                span {
+                    font-size: 30px;
+                    text-transform: capitalize;
+                    color: $title-c;
+                    font-family: $second-f;
+                    font-weight: 400;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+        nav {
+            @media (min-width: 922px) {
+                display: block !important;
+                opacity: 1 !important;
+                ul {
+                    align-items: center;
+                    li {
+                        a {
+                            position: relative;
+                            &::before {
+                                content: "";
+                                width: 0;
+                                height: 2px;
+                                background-color: $blue;
+                                transition: .4s;
+                                position: absolute;
+                                top: calc(100% + 15px);
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            &:hover {
+                                color: $blue !important;
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 921px) {
+                padding: 30px 30px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 100%;
+                bottom: 0;
+                opacity: 0;
+                transition: .5s;
+                background-color: $nav-bg;
+                ul {
+                    flex-direction: column;
+                }
+
+            }
+            ul {
+                display: flex;
+                gap: 20px;
+                li {
+                    a {
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        color: $grey-t;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .get-started {
+            padding: 10px 30px !important;
+            @media (max-width: 921px) {
+                margin-left: auto;
+            }
+        }
+        .toggle-menu {
+            @media (min-width:922px) {
+                display: none !important;
+            }
+            cursor: pointer;
+            i {
+                display: block;
+                font-size: 20px;
+                color: $title-c;
+                transition: .3s;
+                &.hide {
+                    display: none;
+                }
+            }
+            &.clicked {
+                i {
+                    &.show {
+                        display: none;
+                    }
+                    &.hide {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+    }
+}
